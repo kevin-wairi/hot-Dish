@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Syne:wght@600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.container{
+    margin-top: 0;
+}
+/* header start */
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f3f7;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+}
+.logo{
+    display: flex;
+}
+#logo{
+    height: 50px;
+}
+.logoname{
+    color: #5fa23e;
+    font-family: 'Gloock', serif;
+    font-size: 40px;
+    margin: 0;
+}
+#location{
+    height: 30px;
+}
+.header div ul{
+    margin: 0;
+}
+#avatar{
+    height: 35px;
+}
+.searchlocations #ul{
+    list-style-type: none;
+    margin: 0;
+}
+.searchlocations #ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.signup ul {
+    display: flex;
+    padding-top: 10px;
+    justify-content:space-between;
+    padding-left: 0;
+}
+.signup ul li{
+    list-style-type: none;
+
+}
+.signup ul li a{
+    text-decoration: none;
+    color: blue;
+}
+/* header end */
+/* landing start */
+.landing{
+    background-image:url('../images/steak-and-flames-on-the-grill.jpg');
+    background-size:cover;
+    height: 400px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 10px;
+    z-index: -1;
+}
+.landing h1{
+    color: white;
+    align-self: center;
+    font-size: 60px;
+    font-family: 'Syne', sans-serif;
+}
+.landingItems{
+    align-items: center;
+}
+.landing .inputbar{
+    width: 70%;
+    height: 40px;
+    border: 1px solid maroon;
+    border-radius: 20px;
+}
+::placeholder {
+    color:#5fa23e;
+    margin-left: 10px;
+    opacity: 1;
+  }
+
+/* landing stop */
+/* =============================================================================== */
+/* section start */
+.section{
+    display: flex;
+    background-color: #f0f3f7;
+}
+.icons{
+height: 30px;
+}
+.menupanel{
+    position: sticky;
+    top: 60px;
+    max-height: 600px;
+    flex: 1;
+    margin-left: 40px;
+}
+.menupanel ul li{
+    list-style-type: none;
+}
+.menupanel ul{
+    padding-left: 0;
+}
+.mainitems{
+    flex: 7;
+    display: flex;
+
+}
+#cardsdiv{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    justify-content: space-around;
+}
+#btn {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  /* position: relative; */
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+#btn:hover {
+  background-color: #f7fafa;
+}
+
+#btn:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+.cardorder{
+    flex: 3;
+    justify-content:center;
+    height: 600px;
+    position: sticky;
+    /* background-color: #5fa23e; */
+    border-radius: 20px;
+    top: 50px;
+    max-height: 600px;
+    overflow-x: hidden;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.card{
+    height: 270px;
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    /* border: 1px solid; */
+}
+.card p,h4{
+margin: 0;
+}
+#h4{
+margin-top: 20px;
+}
+#yourOder li{
+    list-style-type:circle;
+
+}
+
+#img{
+    height: 180px;
+    width: 200px;
+    border-radius: 30px;
+}
+/* footer begins */
+.footer{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    background-color:black;
+    background-image: url("./images/1.jpg");
+}
+.footer ul li{
+    list-style-type: none;
+}
