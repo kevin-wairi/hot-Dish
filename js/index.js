@@ -72,15 +72,15 @@ Drinks.addEventListener('click',()=>{
                         }
         )
 
-// let Pizzas = document.getElementById('icon5')
-// Pizzas.addEventListener('click',()=>{
-//     cardsDiv.replaceChildren()
-//     fetch(urlPizzas)
-//     .then(resp=>resp.json())
-//     .then(data=>loadCards(data))
-//     .catch((error)=>console.error(error))
-//                         }
-//         )
+let Pizzas = document.getElementById('icon5')
+Pizzas.addEventListener('click',()=>{
+    cardsDiv.replaceChildren()
+    fetch(urlPizzas)
+    .then(resp=>resp.json())
+    .then(data=>loadCards(data))
+    .catch((error)=>console.error(error))
+                        }
+        )
    
 
 
