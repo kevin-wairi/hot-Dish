@@ -52,15 +52,15 @@ breads.addEventListener('click',()=>{
                         }
         )
 
-// let Sandwiches = document.getElementById('icon3')
-// Sandwiches.addEventListener('click',()=>{
-//     cardsDiv.replaceChildren()
-//     fetch(urlSandwitches)
-//     .then(resp=>resp.json())
-//     .then(data=>loadCards(data))
-//     .catch((error)=>console.error(error))
-//                         }
-//         )
+let Sandwiches = document.getElementById('icon3')
+Sandwiches.addEventListener('click',()=>{
+    cardsDiv.replaceChildren()
+    fetch(urlSandwitches)
+    .then(resp=>resp.json())
+    .then(data=>loadCards(data))
+    .catch((error)=>console.error(error))
+                        }
+        )
 
 // let Drinks = document.getElementById('icon4')
 // Drinks.addEventListener('click',()=>{
