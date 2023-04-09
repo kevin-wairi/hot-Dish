@@ -1,25 +1,20 @@
 document.addEventListener('DOMContentLoaded',fetchCards)
 let cardsDiv = document.getElementById('cardsdiv')
-let  url = 'http://localhost:3000/best-foods'
+ let  url = 'http://localhost:3000/best-foods'
 
 
-//function to switch between products
+// // function to switch between products
 // let orderList = document.querySelector('.orderlist')
 // orderList.addEventListener('click',foodswitch)
-// function foodswitch(e){ 
-//     let url;
-// if (e.target.id === 'icon1' || e.target.id === 'li1') {
-//     console.log('burger');
-//    return url= 'http://localhost:3000/burgers'
-    
-// } else {
-//     console.log('jaribu tena');
-//    return url ='http://localhost:3000/best-foods'
-// }
-// }
+
+    // if (e.target.id === 'icon1' || e.target.id === 'li1') {
+ 
 
 
-//fetches  the best food object from JSON
+
+
+
+// fetches  the best food object from JSON
 function fetchCards(){
     return fetch(url)
     .then(resp=>resp.json())

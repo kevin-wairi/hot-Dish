@@ -25,15 +25,26 @@
             <div class="signup">
                 <ul>
                     <li><img id="location" src="./images/location.png" alt="gps location"></li>
-                    <li><a href="#">Get Started</a></li>
+                    <li><a href="#" id="starter">Get Started</a></li>
                     <li><img id="avatar" src="./images/user.png" alt="avatar"></li>
                    
                 </ul>
             </div>
         </div>
         <div class="landing">
-            <div class="landingItems"><h1 >Delicious Meals</h1>
-                <input class="inputbar" type="text" placeholder="Get your favorite meal"></div>
+            <div class="logIn" id="divForm">
+                <form id="logIn" >
+                    <h4 id="close">X</h4>
+                    <label for="username">User name</label>
+                    <input type="text" placeholder="user name">
+                    <label for="location">Enter your Delivery location</label>
+                    <input type="text" placeholder="Your Delivery location">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <!-- <div class="landingItems"><h1 >Delicious Meals</h1>
+            <input class="inputbar" type="text" placeholder="Get your favorite meal"> -->
+            </div>
         </div>
         <div class="section">
             <div class="menupanel">
@@ -94,5 +105,6 @@
         </div>
     </div>
     <script src="./js/index.js"></script>
+    <script src="./js/user.js"></script>
 </body>
 </html>
