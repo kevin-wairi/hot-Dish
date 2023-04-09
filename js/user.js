@@ -3,6 +3,7 @@ let start = document.getElementById('starter')
 let logIn = document.getElementById('divForm')
 let logInForm = document.getElementById('logIn')
 let btnSubmit = document.getElementById('btnSubmit')
+let h4 = document.getElementById('h4')
 
 
 
@@ -18,5 +19,16 @@ btnSubmit.addEventListener('click',(e)=>{
 
     let userName = document.getElementById('user').value
     let userLocation = document.getElementById('userlocation').value
+    h4.innerHTML = `${userName}'s order`
+                h4.style.fontWeight = "900";
+
+   setTimeout(function() {alert(`Welcome ${userName}`);}, 100)
+
+    logInForm.reset()
+    logIn.style.visibility='hidden';
+
 
 })
+// setTimeout(function() {
+//     $('#mydiv').fadeOut('fast');
+// }, 1000); //
