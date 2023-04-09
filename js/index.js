@@ -32,15 +32,15 @@ let loadCards =(arr)=>{
                         }
  }
 
-// let burger = document.getElementById('icon1')
-// burger.addEventListener('click',()=>{
-//     cardsDiv.replaceChildren()
-//     fetch(urlburger)
-//     .then(resp=>resp.json())
-//     .then(data=>loadCards(data))
-//     .catch((error)=>console.error(error))
-//                         }
-//         )
+let burger = document.getElementById('icon1')
+burger.addEventListener('click',()=>{
+    cardsDiv.replaceChildren()
+    fetch(urlburger)
+    .then(resp=>resp.json())
+    .then(data=>loadCards(data))
+    .catch((error)=>console.error(error))
+                        }
+        )
 
 // let breads = document.getElementById('icon2')
 // breads.addEventListener('click',()=>{
