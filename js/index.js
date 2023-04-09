@@ -1,17 +1,11 @@
 document.addEventListener('DOMContentLoaded',fetchCards)
 let cardsDiv = document.getElementById('cardsdiv')
  let  url = 'http://localhost:3000/best-foods'
-
-
-// // function to switch between products
-// let orderList = document.querySelector('.orderlist')
-// orderList.addEventListener('click',foodswitch)
-
-    // if (e.target.id === 'icon1' || e.target.id === 'li1') {
- 
-
-
-
+ let urlburger = 'http://localhost:3000/burgers'
+ let urlbreads = 'http://localhost:3000/breads'
+ let urlSandwitches = 'http://localhost:3000/sandwiches'
+ let urldrinks = 'http://localhost:3000/drinks'
+ let urlPizzas = 'http://localhost:3000/pizzas'
 
 
 // fetches  the best food object from JSON
@@ -23,11 +17,11 @@ function fetchCards(){
 }
 
 // loads all the favorite meals to the DOM
-function loadCards(arr){
+let loadCards =(arr)=>{
     for (const food of arr) {
     let card = document.createElement('div')
     card.classList.add('card')
-    
+    card.setAttribute('id','card')       //setAttribute(‘class’, ‘Class-s-m-x’);
     cardsDiv.appendChild(card)
             card.innerHTML = ` <img id='img' src='${food.img}' alt='${food.id}'>`+
                                 `<div class="card_body" id="card_body">`+
@@ -37,6 +31,66 @@ function loadCards(arr){
                             ` </div>`
                         }
  }
+
+// let burger = document.getElementById('icon1')
+// burger.addEventListener('click',()=>{
+//     cardsDiv.replaceChildren()
+//     fetch(urlburger)
+//     .then(resp=>resp.json())
+//     .then(data=>loadCards(data))
+//     .catch((error)=>console.error(error))
+//                         }
+//         )
+
+// let breads = document.getElementById('icon2')
+// breads.addEventListener('click',()=>{
+//     cardsDiv.replaceChildren()
+//     fetch(urlbreads)
+//     .then(resp=>resp.json())
+//     .then(data=>loadCards(data))
+//     .catch((error)=>console.error(error))
+//                         }
+//         )
+
+// let Sandwiches = document.getElementById('icon3')
+// Sandwiches.addEventListener('click',()=>{
+//     cardsDiv.replaceChildren()
+//     fetch(urlSandwitches)
+//     .then(resp=>resp.json())
+//     .then(data=>loadCards(data))
+//     .catch((error)=>console.error(error))
+//                         }
+//         )
+
+// let Drinks = document.getElementById('icon4')
+// Drinks.addEventListener('click',()=>{
+//     cardsDiv.replaceChildren()
+//     fetch(urldrinks)
+//     .then(resp=>resp.json())
+//     .then(data=>loadCards(data))
+//     .catch((error)=>console.error(error))
+//                         }
+//         )
+
+// let Pizzas = document.getElementById('icon5')
+// Pizzas.addEventListener('click',()=>{
+//     cardsDiv.replaceChildren()
+//     fetch(urlPizzas)
+//     .then(resp=>resp.json())
+//     .then(data=>loadCards(data))
+//     .catch((error)=>console.error(error))
+//                         }
+//         )
+   
+
+
+
+
+
+
+
+
+
 
  const yourOder = document.querySelector('#yourOder')     
 let btn = document.querySelector('#btn');

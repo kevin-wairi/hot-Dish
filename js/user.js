@@ -19,15 +19,18 @@ btnSubmit.addEventListener('click',(e)=>{
 
     let userName = document.getElementById('user').value
     let userLocation = document.getElementById('userlocation').value
+    let userlog = document.getElementById('userlog')
     h4.innerHTML = `${userName}'s order`
                 h4.style.fontWeight = "900";
 
-   setTimeout(function() {alert(`Welcome ${userName}`);}, 100)
+   setTimeout(function() {alert(`Welcome ${userName}, Bon Appétit `);}, 100)
 
     logInForm.reset()
     logIn.style.visibility='hidden';
-
-
+    let userlogname = document.createElement('h4')
+    userlogname.style.padding='10px'
+    userlog.replaceChildren(userlogname)
+    userlogname.textContent = `${userName}`
 })
 // setTimeout(function() {
 //     $('#mydiv').fadeOut('fast');
