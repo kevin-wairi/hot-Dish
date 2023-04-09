@@ -42,15 +42,15 @@ burger.addEventListener('click',()=>{
                         }
         )
 
-// let breads = document.getElementById('icon2')
-// breads.addEventListener('click',()=>{
-//     cardsDiv.replaceChildren()
-//     fetch(urlbreads)
-//     .then(resp=>resp.json())
-//     .then(data=>loadCards(data))
-//     .catch((error)=>console.error(error))
-//                         }
-//         )
+let breads = document.getElementById('icon2')
+breads.addEventListener('click',()=>{
+    cardsDiv.replaceChildren()
+    fetch(urlbreads)
+    .then(resp=>resp.json())
+    .then(data=>loadCards(data))
+    .catch((error)=>console.error(error))
+                        }
+        )
 
 // let Sandwiches = document.getElementById('icon3')
 // Sandwiches.addEventListener('click',()=>{
