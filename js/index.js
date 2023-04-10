@@ -27,7 +27,7 @@ let loadCards =(arr)=>{
                                 `<div class="card_body" id="card_body">`+
                                 ` <h4 class="card_name">${food.dsc}</h4>`+
                                 `<p class="price">Price: ${food.price}</p>`+
-                                `<p id='addP'><button id="btn">Add</button></p>`+
+                                `<p id='addP'><button id="btn">Order</button></p>`+
                             ` </div>`
                         }
  }
