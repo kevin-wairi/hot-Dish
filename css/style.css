@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Syne:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Gloock&family=Red+Hat+Display:wght@300&family=Sarabun:wght@200&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -6,6 +6,7 @@ body{
 }
 .container{
     margin-top: 0;
+
 }
 /* header start */
 .header{
@@ -77,7 +78,7 @@ body{
     color: white;
     align-self: center;
     font-size: 60px;
-    font-family: 'Syne', sans-serif;
+    font-family: 'Gloock', serif;
 }
 .landingItems{
     align-items: center;
@@ -85,14 +86,12 @@ body{
 .landing .inputbar{
     width: 70%;
     height: 40px;
-    border: 1px solid maroon;
     border-radius: 20px;
 }
 /* input form inside landing */
 #logIn{
     width: 250px;
     padding: 10px;      
-    font-family: 'Syne', sans-serif;
     font-weight: lighter;
 }
 #logIn ::placeholder{
@@ -103,23 +102,33 @@ body{
     height: 30px;
     border-radius: 10px;
     width: 100%;
-    border: 1px solid grey;
+    border: 1px solid white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 #logIn button{
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid grey;
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    
 }
 #logIn #close{
     float: right;
+    text-align: center;
+    width: 20px;
     margin-right: -25px;
+    border-radius: 15px;
     cursor: pointer;
+    color: white;
+    background-color: #0f1111;
+    /* -webkit-transform: rotate(-75deg); */
 }
 .logIn {
     border-radius: 10px;
-    border: 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     width: 300px;
-    height: 200px;
+    height: 250px;
+    font-family: 'Sarabun', sans-serif;
     background-color: #fff;
     visibility:hidden;
     position: absolute;
@@ -165,10 +174,11 @@ margin-right: 10px;
     margin: 5px;
     padding: 5px;
     width: 100%;
-    
+    cursor: pointer;
+    font-family: 'Red Hat Display', sans-serif;
 }
 .listItem:hover{
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 1px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -193,13 +203,7 @@ margin-right: 10px;
   font-size: 13px;
   line-height: 29px;
   padding: 0 10px 0 11px;
-  /* position: relative; */
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
+  margin-top: -15px;  
   width: 100px;
   float: right;
 }
@@ -214,32 +218,32 @@ margin-right: 10px;
   outline: 0;
 }
 .cardorder{
-    flex: 3;
+    flex: 2;
     justify-content:center;
+    margin-right: 20px;
+    font-family: 'Comfortaa', cursive;
     height: 600px;
     position: sticky;
-    /* background-color: #5fa23e; */
     border-radius: 20px;
     top: 50px;
     max-height: 600px;
     overflow-x: hidden;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.card,.newCard{
+.card{
     height: 270px;
     width: 200px;
     margin: 5px;
     padding: 10px;
     border-radius: 20px;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 100px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     /* border: 1px solid; */
 }
 .card p,h4{
 margin: 0;
 }
-.newCard p,h4{
-    margin: 0;
-    }
 #h4{
 margin-top: 20px;
 margin-left: 20px;
